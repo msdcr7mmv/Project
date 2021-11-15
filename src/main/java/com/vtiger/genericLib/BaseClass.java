@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -13,7 +12,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
 import com.vtiger.objectRepository.LoginClass;
 
@@ -34,11 +32,11 @@ public class BaseClass {
 		System.out.println("Connect to Data Base");
 	}
 
-	//@Parameters("browser")
+	@Parameters("browser")
 	@BeforeClass(groups={"smokeTest", "regTest", "itTest"})
-	public void openBrowser() throws Throwable
+	public void openBrowser(String browserValue ) throws Throwable
 	{
-		String browserValue=pUtil.propertyFileUtility("browser");
+		//String browserValue=pUtil.propertyFileUtility("browser");
 		if(browserValue.equalsIgnoreCase("chrome"))
 		{
 			
