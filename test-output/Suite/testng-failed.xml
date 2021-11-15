@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test_Runner1(failed)">
+    <classes>
+      <class name="com.vtiger.testscripts.GroupingTheMultiplePrgmsTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="connectToDataBase"/>
+          <include name="disConnectToDataBase"/>
+          <include name="login"/>
+          <include name="addContactOfOrganizationTest"/>
+          <include name="logOut"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.vtiger.testscripts.GroupingTheMultiplePrgmsTest -->
+    </classes>
+  </test> <!-- Test_Runner1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test_Runner2(failed)">
+    <classes>
+      <class name="com.vtiger.testscripts.GroupingTheMultiplePrgmsTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="connectToDataBase"/>
+          <include name="addIndustryinOrganisationTest"/>
+          <include name="disConnectToDataBase"/>
+          <include name="login"/>
+          <include name="logOut"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.vtiger.testscripts.GroupingTheMultiplePrgmsTest -->
+    </classes>
+  </test> <!-- Test_Runner2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
