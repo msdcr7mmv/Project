@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="2" total="4" passed="0" failed="1" skipped="1">
+=======
+<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
+>>>>>>> branch 'master' of https://github.com/Stephen-Saykam/Project.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-11-15T23:24:39 IST" name="Suite" finished-at="2021-11-15T23:24:56 IST" duration-ms="17207">
+=======
+  <suite started-at="2021-11-15T15:10:22 IST" name="Suite" finished-at="2021-11-15T15:11:51 IST" duration-ms="88516">
+>>>>>>> branch 'master' of https://github.com/Stephen-Saykam/Project.git
     <groups>
       <group name="regTest">
         <method signature="GroupingTheMultiplePrgmsTest.addIndustryinOrganisationTest()[pri:0, instance:com.vtiger.testscripts.GroupingTheMultiplePrgmsTest@4b8ee4de]" name="addIndustryinOrganisationTest" class="com.vtiger.testscripts.GroupingTheMultiplePrgmsTest"/>
@@ -11,12 +19,19 @@
         <method signature="GroupingTheMultiplePrgmsTest.addContactOfOrganizationTest()[pri:0, instance:com.vtiger.testscripts.GroupingTheMultiplePrgmsTest@741a8937]" name="addContactOfOrganizationTest" class="com.vtiger.testscripts.GroupingTheMultiplePrgmsTest"/>
       </group> <!-- smokeTest -->
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-11-15T23:24:39 IST" name="Test_Runner2" finished-at="2021-11-15T23:24:52 IST" duration-ms="12618">
       <class name="com.vtiger.testscripts.GroupingTheMultiplePrgmsTest">
         <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:com.vtiger.testscripts.GroupingTheMultiplePrgmsTest@4b8ee4de]" started-at="2021-11-15T23:24:39 IST" name="connectToDataBase" finished-at="2021-11-15T23:24:39 IST" duration-ms="8" status="PASS">
+=======
+    <test started-at="2021-11-15T15:10:22 IST" name="Test" finished-at="2021-11-15T15:11:51 IST" duration-ms="88516">
+      <class name="com.vtiger.testscripts.AddContactOfOrganizationTest">
+        <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:com.vtiger.testscripts.AddContactOfOrganizationTest@21e360a]" started-at="2021-11-15T15:10:22 IST" name="connectToDataBase" finished-at="2021-11-15T15:10:22 IST" duration-ms="10" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Stephen-Saykam/Project.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDataBase -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.vtiger.testscripts.GroupingTheMultiplePrgmsTest@4b8ee4de]" started-at="2021-11-15T23:24:39 IST" name="openBrowser" finished-at="2021-11-15T23:24:43 IST" duration-ms="3907" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -323,5 +338,77 @@ at java.base/java.lang.Thread.run(Thread.java:831)
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.vtiger.testscripts.GroupingTheMultiplePrgmsTest -->
     </test> <!-- Test_Runner1 -->
+=======
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.vtiger.testscripts.AddContactOfOrganizationTest@21e360a]" started-at="2021-11-15T15:10:22 IST" name="openBrowser" finished-at="2021-11-15T15:10:26 IST" duration-ms="3376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.vtiger.testscripts.AddContactOfOrganizationTest@21e360a]" started-at="2021-11-15T15:10:26 IST" name="login" finished-at="2021-11-15T15:10:38 IST" duration-ms="12003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addContactOfOrganizationTest()[pri:0, instance:com.vtiger.testscripts.AddContactOfOrganizationTest@21e360a]" started-at="2021-11-15T15:10:38 IST" name="addContactOfOrganizationTest" finished-at="2021-11-15T15:11:06 IST" duration-ms="28612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addContactOfOrganizationTest -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.vtiger.testscripts.AddContactOfOrganizationTest@21e360a]" started-at="2021-11-15T15:11:06 IST" name="logOut" finished-at="2021-11-15T15:11:11 IST" duration-ms="4357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.vtiger.testscripts.AddContactOfOrganizationTest@21e360a]" started-at="2021-11-15T15:11:11 IST" name="closeBrowser" finished-at="2021-11-15T15:11:11 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="disConnectToDataBase()[pri:0, instance:com.vtiger.testscripts.AddContactOfOrganizationTest@21e360a]" started-at="2021-11-15T15:11:51 IST" name="disConnectToDataBase" finished-at="2021-11-15T15:11:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disConnectToDataBase -->
+      </class> <!-- com.vtiger.testscripts.AddContactOfOrganizationTest -->
+      <class name="com.vtiger.testscripts.OpenApplicationTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.vtiger.testscripts.OpenApplicationTest@bae7dc0]" started-at="2021-11-15T15:11:11 IST" name="openBrowser" finished-at="2021-11-15T15:11:13 IST" duration-ms="2141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.vtiger.testscripts.OpenApplicationTest@bae7dc0]" started-at="2021-11-15T15:11:13 IST" name="login" finished-at="2021-11-15T15:11:17 IST" duration-ms="4024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="openApplicationTest()[pri:0, instance:com.vtiger.testscripts.OpenApplicationTest@bae7dc0]" started-at="2021-11-15T15:11:17 IST" name="openApplicationTest" finished-at="2021-11-15T15:11:30 IST" duration-ms="13161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplicationTest -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.vtiger.testscripts.OpenApplicationTest@bae7dc0]" started-at="2021-11-15T15:11:30 IST" name="logOut" finished-at="2021-11-15T15:11:34 IST" duration-ms="3638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.vtiger.testscripts.OpenApplicationTest@bae7dc0]" started-at="2021-11-15T15:11:34 IST" name="closeBrowser" finished-at="2021-11-15T15:11:34 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.vtiger.testscripts.OpenApplicationTest -->
+      <class name="com.vtiger.testscripts.AddIndustryInOrganizationTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.vtiger.testscripts.AddIndustryInOrganizationTest@209da20d]" started-at="2021-11-15T15:11:34 IST" name="openBrowser" finished-at="2021-11-15T15:11:36 IST" duration-ms="2107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.vtiger.testscripts.AddIndustryInOrganizationTest@209da20d]" started-at="2021-11-15T15:11:36 IST" name="login" finished-at="2021-11-15T15:11:40 IST" duration-ms="3932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addIndustryinOrganisationTest()[pri:0, instance:com.vtiger.testscripts.AddIndustryInOrganizationTest@209da20d]" started-at="2021-11-15T15:11:40 IST" name="addIndustryinOrganisationTest" finished-at="2021-11-15T15:11:47 IST" duration-ms="7516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addIndustryinOrganisationTest -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.vtiger.testscripts.AddIndustryInOrganizationTest@209da20d]" started-at="2021-11-15T15:11:47 IST" name="logOut" finished-at="2021-11-15T15:11:51 IST" duration-ms="3334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.vtiger.testscripts.AddIndustryInOrganizationTest@209da20d]" started-at="2021-11-15T15:11:51 IST" name="closeBrowser" finished-at="2021-11-15T15:11:51 IST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.vtiger.testscripts.AddIndustryInOrganizationTest -->
+    </test> <!-- Test -->
+>>>>>>> branch 'master' of https://github.com/Stephen-Saykam/Project.git
   </suite> <!-- Suite -->
 </testng-results>

@@ -11,6 +11,10 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+
+
+import org.testng.annotations.Parameters;
+
 import com.vtiger.objectRepository.LoginClass;
 
 
@@ -30,11 +34,11 @@ public class BaseClass {
 		System.out.println("Connect to Data Base");
 	}
 
-	//@Parameters("browser")
+	@Parameters("browser")
 	@BeforeClass(groups={"smokeTest", "regTest", "itTest"})
-	public void openBrowser() throws Throwable
+	public void openBrowser(String browserValue ) throws Throwable
 	{
-		String browserValue=pUtil.propertyFileUtility("browser");
+		//String browserValue=pUtil.propertyFileUtility("browser");
 		if(browserValue.equalsIgnoreCase("chrome"))
 		{
 			
