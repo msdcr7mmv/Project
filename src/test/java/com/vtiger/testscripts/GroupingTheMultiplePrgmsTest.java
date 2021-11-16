@@ -26,7 +26,7 @@ public class GroupingTheMultiplePrgmsTest extends BaseClass {
 		//driver.findElement(By.xpath("//input[@name=\"firstname\"]")).sendKeys("Raj");
         driver.findElement(By.xpath("//input[@name=\"lastname\"]")).sendKeys("Kumar");
 		driver.findElement(By.xpath("(//img[@title=\"Select\"])[1]")).click();
-		System.out.println("HAI");
+		System.out.println("Fine");
 		Thread.sleep(3000);
 		
 		
