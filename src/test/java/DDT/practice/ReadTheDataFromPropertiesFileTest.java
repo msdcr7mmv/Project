@@ -1,7 +1,6 @@
 package DDT.practice;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Properties;
 
 import org.testng.annotations.Test;

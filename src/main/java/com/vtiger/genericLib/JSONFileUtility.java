@@ -1,6 +1,5 @@
 package com.vtiger.genericLib;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.HashMap;
 
@@ -13,6 +12,7 @@ public class JSONFileUtility {
 		FileReader fr = new FileReader(IPathConstant.JSONFILEPATH);
 		JSONParser parser = new JSONParser();
 		Object jObj = parser.parse(fr);
+		@SuppressWarnings("rawtypes")
 		HashMap obj = (HashMap)jObj;
 		String value = (String) obj.get(key);
 		return value;

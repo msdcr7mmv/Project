@@ -1,6 +1,5 @@
 package com.practice;
 
-import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;

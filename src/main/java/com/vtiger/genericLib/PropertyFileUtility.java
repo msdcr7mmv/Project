@@ -1,7 +1,6 @@
 package com.vtiger.genericLib;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Properties;
 
 import org.junit.Test;

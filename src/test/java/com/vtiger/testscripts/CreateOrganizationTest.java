@@ -1,23 +1,17 @@
 package com.vtiger.testscripts;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import org.testng.Reporter;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
 import com.vtiger.genericLib.BaseClass;
-import com.vtiger.genericLib.BaseClass1;
 import com.vtiger.genericLib.ExcelUtility;
 import com.vtiger.genericLib.JavaUtility;
 
-public class CreateOrganizationTest extends BaseClass1 {
+public class CreateOrganizationTest extends BaseClass {
 	
 	@Test
 	public void createOrganizationTest() throws Throwable
 	{
 		ExcelUtility eUtil = new ExcelUtility();
+		@SuppressWarnings("unused")
 		String orgName = eUtil.excelUtility("Sheet1", 1, 2)+"_"+JavaUtility.generateRandomNumber();
 		
 		//Create Organization

@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
@@ -19,9 +18,13 @@ public class SVGHandlingTest {
 		Date dt = new Date();
 		String s = dt.toString();
 		String[] arr = s.split(" ");
+		@SuppressWarnings("unused")
 		String day = arr[0];
+		@SuppressWarnings("unused")
 		String month = arr[1];
+		@SuppressWarnings("unused")
 		String currentdate = arr[2];
+		@SuppressWarnings("unused")
 		String year = arr[5];
 		
 		

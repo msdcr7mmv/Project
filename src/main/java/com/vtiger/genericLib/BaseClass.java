@@ -11,14 +11,12 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
-
 import com.vtiger.objectRepository.LoginClass;
 
 
 public class BaseClass {
 
-	public  static WebDriver driver;
+	public WebDriver driver;
 	public PropertyFileUtility pUtil = new PropertyFileUtility();
 	public WebDriverUtility wUtil=new WebDriverUtility();
 	public ExcelUtility eUtil=new ExcelUtility();
@@ -32,11 +30,11 @@ public class BaseClass {
 		System.out.println("Connect to Data Base");
 	}
 
-	@Parameters("browser")
+	//@Parameters("browser")
 	@BeforeClass(groups={"smokeTest", "regTest", "itTest"})
-	public void openBrowser(String browserValue ) throws Throwable
+	public void openBrowser() throws Throwable
 	{
-		//String browserValue=pUtil.propertyFileUtility("browser");
+		String browserValue=pUtil.propertyFileUtility("browser");
 		if(browserValue.equalsIgnoreCase("chrome"))
 		{
 			
@@ -55,7 +53,7 @@ public class BaseClass {
 		{
 			System.out.println("Please Enter the Proper Browser Name");
 		}
-		//sdriver=driver;
+		sdriver=driver;
 	}
 	
 	@BeforeMethod(groups={"smokeTest", "regTest", "itTest"})

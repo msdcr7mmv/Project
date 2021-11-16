@@ -1,17 +1,11 @@
 package com.vtiger.purchaseorder;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import com.vtiger.genericLib.BaseClass;
-import com.vtiger.genericLib.ExcelUtility;
-import com.vtiger.genericLib.IPathConstant;
 import com.vtiger.genericLib.JavaUtility;
-import com.vtiger.genericLib.PropertyFileUtility;
-import com.vtiger.genericLib.WebDriverUtility;
 
 public class CreatePO_StatusAsCancelledTest extends BaseClass {
 	

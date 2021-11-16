@@ -130,6 +130,7 @@ public class WebDriverUtility {
 	
 	public String takesScreenShot(WebDriver driver, String screenshotName) throws IOException
 	{
+		@SuppressWarnings("unused")
 		String currentDate = new Date().toString().replace(" ", "_");
 		String screenshotpath="./screenshots/"+screenshotName+".PNG";
 		TakesScreenshot ts = (TakesScreenshot)driver;
@@ -193,6 +194,7 @@ public class WebDriverUtility {
 			System.setProperty(IPathConstant.CHROME_KEY, IPathConstant.CHROME_VALUE);
 			ChromeOptions co = new ChromeOptions();
 			co.addArguments("----disable-notifications----");
+			@SuppressWarnings("unused")
 			ChromeDriver driver = new ChromeDriver(co);
 			
 		}
@@ -201,6 +203,7 @@ public class WebDriverUtility {
 			System.setProperty(IPathConstant.GECKO_KEY, IPathConstant.GECKO_VALUE);
 			FirefoxOptions fo = new FirefoxOptions();
 			fo.addArguments("----disable-notifications----");
+			@SuppressWarnings("unused")
 			FirefoxDriver driver = new FirefoxDriver(fo);
 		}
 		else
