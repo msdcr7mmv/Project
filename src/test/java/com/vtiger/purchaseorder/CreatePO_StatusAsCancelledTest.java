@@ -26,6 +26,7 @@ public class CreatePO_StatusAsCancelledTest extends BaseClass {
 		String childtitle = "Vendors";
 		wUtil.swichToWindow(driver, childtitle);
 		driver.findElement(By.xpath("//a[@href=\"javascript:window.close();\"]")).click();
+		System.out.println("close ");
 		Thread.sleep(2000);
 		
 		//Switch to ParentWindow
